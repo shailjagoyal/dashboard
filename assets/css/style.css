@@ -1,0 +1,107 @@
+nav {
+    box-shadow: 0px 1px 0px #E4E8F0;
+}
+
+.menu-icon {
+    height: 20px;
+    cursor: pointer;
+}
+
+.logo,
+.user-icon {
+    height: 30px;
+}
+
+.notification-icon,
+.options-icon {
+    height: 25px;
+    cursor: pointer;
+}
+
+.user-wrapper {
+    cursor: pointer;
+}
+
+.down-icon {
+    width: 10px;
+}
+
+.sidenav {
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 1px 0px 0px #E4E8F0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.hide {
+    transform: translateX(-100%);
+}
+
+main {
+    margin-left: 220px;
+    background-color: #f4f6fc;
+    transition: all 0.6s ease-in-out 0s;
+    min-height: 90vh;
+}
+
+.expand {
+    margin-left: 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 1rem;
+}
+
+.menu-link {
+    padding: 0.8rem 0 0.8rem 1.2rem;
+    font-size: 15px;
+    color: #2E4E66;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-link:hover {
+    color: #2E5BFF;
+}
+
+.menu-active {
+    background-color: #EBEFFF;
+    color: #2E5BFF !important;
+    border-left: 2px solid #2E5BFF;
+}
+
+.card1 {
+    background-color: #B8D0FF;
+    border-radius: 10px;
+}
+
+.img1 {
+    height: 100px;
+}
+
+.card1 .card-title {
+    color: #183B56;
+}
+
+.card1 .card-text {
+    color: #183B56;
+    font-size: 14px;
+}
+
+.apply-btn {
+    background-color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    font-size: 16px;
+    color: #183B56;
+}
