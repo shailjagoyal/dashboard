@@ -62,17 +62,17 @@
                 <div class="col-lg-9">
                     <div class="card ms-3 mt-4 border-0 card1">
                         <div class="card-body py-2">
-                            <div class="row align-items-center">
-                                <div class="col-2 text-center">
-                                    <img class="img1" src="assets/images/image1.png" alt="">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-3 col-xl-2 p-0 text-center">
+                                    <img class="w-100 img-fluid" src="assets/images/image1.png" alt="">
                                 </div>
-                                <div class="col-8 col-xl-7">
+                                <div class="col-6 col-xl-7">
                                     <h5 class="card-title">Get your student loan today</h5>
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris, elementum duis eget quis hac vestibulum feugiat nunc.
                                     </p>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-3 col-xl-2 p-0">
                                     <button class="btn apply-btn">Apply Now</button>
                                 </div>
                             </div>
@@ -80,6 +80,50 @@
                     </div>
                 </div>
                 <div class="col-lg-3"></div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-11 ms-3">
+                    <h5 class="fw-normal">New Loan </h5>
+                </div>
+                <div class="col-lg-9">
+                    <div class="card ms-3 border-0 card2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title d-flex align-items-center">Home Loan 
+                                    <span class="status in-progress px-2 ms-4 d-inline-block">&#8226; In-progress</span>
+                                </h5>
+                                <button class="btn upload-btn px-3">Upload Documents</button>
+                            </div>
+                            <p class="card-subtitle">Loan ID : 54818915</p>
+
+                            <hr>
+
+                            <div class="stepper-wrapper">
+                                <div class="stepper-item completed">
+                                    <div class="step-name">Check Eligibilty</div>
+                                    <div class="step-counter"></div>
+                                </div>
+                                <div class="stepper-item completed">
+                                    <div class="step-name">Loan Offer</div>
+                                    <div class="step-counter"></div>
+                                </div>
+                                <div class="stepper-item completed">
+                                    <div class="step-name">Complete Application</div>
+                                    <div class="step-counter"></div>
+                                </div>
+                                <div class="stepper-item active">
+                                    <div class="step-name">Upload Documents</div>
+                                    <div class="step-counter"></div>
+                                </div>
+                                <div class="stepper-item">
+                                    <div class="step-name">Approve</div>
+                                    <div class="step-counter"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </div>
 
@@ -94,7 +138,19 @@
         $('.menu-icon').click(function() {
             $('.sidenav').toggleClass('hide');
             $('main').toggleClass('expand')
-        })
+        });
+        function sideNav(){
+            if($(window).width() < 1024){
+                $('.sidenav').addClass('hide');
+                $('main').addClass('expand')
+            }
+            else{
+                $('.sidenav').removeClass('hide');
+                $('main').removeClass('expand')
+            }
+        }
+        $(window).on('resize', sideNav())
+        $(document).ready(sideNav());
     </script>
 </body>
 
