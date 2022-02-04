@@ -138,6 +138,7 @@ main {
     width: min-content;
     line-height: 17px;
     margin-bottom: 6px;
+    text-align:center;
 }
 .stepper-item::before {
     position: absolute;
