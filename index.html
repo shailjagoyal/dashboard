@@ -12,107 +12,120 @@
 
 <body>
 
-    <header>
-        <nav class="d-flex justify-content-between py-3 ps-4 pe-5">
+    <header class="position-sticky top-0"> 
+        <nav class="d-flex justify-content-between py-3 px-xl-4 px-md-3 px-2 bg-white">
             <div>
                 <img class="menu-icon me-4" src="assets/images/Hamburger.svg" alt="menu">
                 <img class="logo" src="assets/images/logo.svg" alt="logo">
             </div>
-            <div class="me-5">
+            <div class="me-xl-5">
                 <img class="options-icon me-3" src="assets/images/options.svg" alt="options">
                 <img class="notification-icon me-3" src="assets/images/notification.svg" alt="notification">
                 <img class="user-icon me-1" src="assets/images/person.svg" alt="person">
                 <span class="user-wrapper"><span>Rachel weisz </span> <span><img class="down-icon ms-1" src="assets/images/down.svg" alt=""></span></span>
             </div>
         </nav>
-        <div class="sidenav">
-            <ul class="menu-list">
-                <li>
-                    <a href="" class="menu-link menu-active">
-                        <span class="pe-2"><img src="assets/images/file.svg" alt="file"></span> Loan Summary
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="menu-link">
-                        <span class="pe-2"><img src="assets/images/market.svg" alt="market"></span> Transact
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="menu-link">
-                        <span class="pe-2"><img src="assets/images/location.svg" alt="location"></span> Enquire
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="menu-link">
-                        <span class="pe-2"><img src="assets/images/message.svg" alt="message"></span> Request
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="menu-link">
-                        <span class="pe-2"><img src="assets/images/settings.svg" alt="settings"></span> Settings
-                    </a>
-                </li>
-            </ul>
-        </div>
+        
     </header>
 
+    <div class="sidenav">
+        <ul class="menu-list">
+            <li>
+                <a href="" class="menu-link menu-active">
+                    <span class="pe-2"><img src="assets/images/file.svg" alt="file"></span> Loan Summary
+                </a>
+            </li>
+            <li>
+                <a href="" class="menu-link">
+                    <span class="pe-2"><img src="assets/images/market.svg" alt="market"></span> Transact
+                </a>
+            </li>
+            <li>
+                <a href="" class="menu-link">
+                    <span class="pe-2"><img src="assets/images/location.svg" alt="location"></span> Enquire
+                </a>
+            </li>
+            <li>
+                <a href="" class="menu-link">
+                    <span class="pe-2"><img src="assets/images/message.svg" alt="message"></span> Request
+                </a>
+            </li>
+            <li>
+                <a href="" class="menu-link">
+                    <span class="pe-2"><img src="assets/images/settings.svg" alt="settings"></span> Settings
+                </a>
+            </li>
+        </ul>
+        
+        <div class="side-card3 side-card card border-0 m-2">
+            <div class="card-body text-center">
+                <img src="assets/images/image4.png" alt="" class="img-fluid">
+                <h5 class="card-title mt-3">Complete your Profile</h5>
+                <div class="progress mt-3">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="font-12 mt-2">80% Completed</p>
+                <button class="btn apply-btn font-14">Complete Now</button>
+            </div>
+        </div>
+    </div>
     <main>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row px-xl-3 pt-4">
                 <div class="col-lg-9">
-                    <div class="card ms-3 mt-4 border-0 card1">
+                    <div class="card border-0 card1">
                         <div class="card-body py-2">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-3 col-xl-2 p-0 text-center">
                                     <img class="w-100 img-fluid" src="assets/images/image1.png" alt="">
                                 </div>
-                                <div class="col-6 col-xl-7">
+                                <div class="col-sm-7 col-9">
                                     <h5 class="card-title">Get your student loan today</h5>
-                                    <p class="card-text">
+                                    <p class="card-text font-14">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris, elementum duis eget quis hac vestibulum feugiat nunc.
                                     </p>
+                                    <button class="btn w-auto apply-btn font-14 d-sm-none">Apply Now</button>
                                 </div>
-                                <div class="col-3 col-xl-2 p-0">
-                                    <button class="btn apply-btn">Apply Now</button>
+                                <div class="col-2 col-xl-2 ps-0 d-none d-sm-block">
+                                    <button class="btn px-0 apply-btn font-14">Apply Now</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3"></div>
-            </div>
 
-            <div class="row mt-4">
-                <div class="col-11 ms-3">
-                    <h5 class="fw-normal">New Loan </h5>
-                </div>
-                <div class="col-lg-9">
-                    <div class="card ms-3 border-0 card2">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="card-title d-flex align-items-center">Home Loan 
-                                    <span class="status in-progress px-2 ms-4 d-inline-block">&#8226; In-progress</span>
-                                </h5>
-                                <button class="btn upload-btn px-3">Upload Documents</button>
+                    <div class="mt-4">
+                        <h5 class="fw-normal">New Loan </h5>
+                    </div>
+
+                    <div class="card border-0 card2">
+                        <div class="card-body px-2 px-md-3">
+                            <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                <div>
+                                    <h5 class="card-title d-flex align-items-center">Home Loan 
+                                        <span class="status in-progress py-1 px-2 ms-4 d-inline-block font-14">&#8226; In-progress</span>
+                                    </h5>
+                                    <p class="card-subtitle">Loan ID : 54818915</p>
+                                </div>
+                                <button class="btn font-14 primary-btn px-3">Upload Documents</button>
                             </div>
-                            <p class="card-subtitle">Loan ID : 54818915</p>
+                         
 
                             <hr>
 
                             <div class="stepper-wrapper">
-                                <div class="stepper-item completed">
+                                <div class="stepper-item proces-completed">
                                     <div class="step-name">Check Eligibilty</div>
                                     <div class="step-counter"></div>
                                 </div>
-                                <div class="stepper-item completed">
+                                <div class="stepper-item proces-completed">
                                     <div class="step-name">Loan Offer</div>
                                     <div class="step-counter"></div>
                                 </div>
-                                <div class="stepper-item completed">
+                                <div class="stepper-item proces-completed">
                                     <div class="step-name">Complete Application</div>
                                     <div class="step-counter"></div>
                                 </div>
-                                <div class="stepper-item active">
+                                <div class="stepper-item process-active">
                                     <div class="step-name">Upload Documents</div>
                                     <div class="step-counter"></div>
                                 </div>
@@ -123,12 +136,130 @@
                             </div>
                         </div>
                     </div> 
+
+                    <div class="mt-4">
+                        <h5 class="fw-normal">Existing Loan </h5>
+                    </div>
+
+                    <div class="card border-0 card2">
+                        <div class="card-body">
+                            <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                <div>
+                                    <h5 class="card-title d-flex align-items-center">Personal Loan
+                                        <span class="status font-14 active py-1 px-2 ms-4 d-inline-block">&#8226; Active</span>
+                                    </h5>
+                                    <p class="card-subtitle">Loan ID : 54818915</p>
+                                </div>
+                                <button class="btn font-14 primary-btn px-3">View Details</button>
+                            </div>
+                            
+
+                            <hr>
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="title font-14 mb-0">Loan Amount</p>
+                                    <div class="amount font-14">₹6,00000</div>
+                                </div>
+                                <div class="col-3">
+                                     <p class="title font-14 mb-0">EMI Tenure</p>
+                                    <div class="amount font-14">4 years</div>
+                                </div>
+                                <div class="col-3">
+                                     <p class="title font-14 mb-0">Interest rate</p>
+                                    <div class="amount font-14">14.0 %</div>
+                                </div>
+                                <div class="col-3">
+                                     <p class="title font-14 mb-0">EMI</p>
+                                    <div class="amount font-14">₹16396.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="">
+                        <div class="row mt-4">
+                            <div class="col-sm-6">
+                                <div class="card py-3 bottom-card">
+                                    <div class="card-body text-center">
+                                        <h6 class="mb-3">Interested in a new loan?</h6>
+                                        <p class="font-14 mb-0">Please click here to explore our loan options and apply .</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-4 mt-sm-0">
+                                <div class="card py-3 bottom-card">
+                                    <div class="card-body text-center">
+                                        <h6 class="mb-3">Have Outstanding EMI</h6>
+                                        <p class="font-14 mb-0">Please click here to pay , no service charges and fees</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-6">
+                            <div class="side-card1 h-100 side-card card border-0 mt-4 mt-lg-0">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/image2.png" alt="" class="img-fluid">
+                                    <h5 class="card-title mt-3">Complete your loan process</h5>
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="font-12 mt-2">80% Completed</p>
+                                    <button class="btn apply-btn font-14">Complete Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-6 mt-4 mt-sm-0">
+                            <div class="side-card2 h-100 side-card card border-0 mt-4">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/image3.png" alt="" class="img-fluid">
+                                    <h5 class="card-title mt-3">Pay Loan Due</h5>
+                                    <p class="font-14 mb-0">Total Due Amount</p>
+                                    <h6>₹16396.0</h6>
+                                    <p class="font-12 mt-2">You missed a payment 2 days ago</p>
+                                    <button class="btn apply-btn font-14">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+
         </div>
 
 
     </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row py-2 text-center align-items-center">
+                <div class="col-xl-3 col-md-6">Copyright Bank Limited.</div>
+                <div class="col-xl-3 col-md-6"><a class="footer-link" href="tel:18004195959">Call: 1800-419-5959</a></div>
+                <div class="col-xl-3 col-md-6">
+                    <a class="footer-link me-3" href="javascript:void(0)">Terms & Conditions</a>
+                    <a class="footer-link" href="javascript:void(0)">Privacy Policy</a>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <a href="javascript:void(0)" class="footer-link social me-2">
+                        <img src="assets/images/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="javascript:void(0)" class="footer-link social me-2">
+                        <img src="assets/images/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="javascript:void(0)" class="footer-link social">
+                        <img src="assets/images/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -138,16 +269,15 @@
         $('.menu-icon').click(function() {
             $('.sidenav').toggleClass('hide');
             $('main').toggleClass('expand')
+            $('footer').toggleClass('expand')
         });
         function sideNav(){
             if($(window).width() < 1024){
                 $('.sidenav').addClass('hide');
                 $('main').addClass('expand')
+                $('footer').addClass('expand')
             }
-            else{
-                $('.sidenav').removeClass('hide');
-                $('main').removeClass('expand')
-            }
+
         }
         $(window).on('resize', sideNav())
         $(document).ready(sideNav());
