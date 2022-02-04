@@ -1,6 +1,9 @@
 body{
     color: #02314B;
 }
+header{
+    z-index: 200;
+}
 nav {
     box-shadow: 0px 1px 0px #E4E8F0;
 }
@@ -26,13 +29,13 @@ nav {
 .sidenav {
     position: absolute;
     width: 220px;
-    height: 100%;
     background-color: white;
-    box-shadow: 1px 0px 0px #E4E8F0;
     transform: translateX(0);
     transition: all 0.6s ease-in-out 0s;
-    z-index: 200;
+    z-index: 199;
+    padding-bottom: 4rem;
 }
+
 .hide {
     transform: translateX(-100%);
 }
@@ -41,6 +44,7 @@ main {
     background-color: #f4f6fc;
     transition: all 0.6s ease-in-out 0s;
     min-height: 90vh;
+    padding-bottom: 4rem;
 }
 .expand {
     margin-left: 0;
@@ -65,6 +69,12 @@ main {
     color: #2E5BFF !important;
     border-left: 2px solid #2E5BFF;
 }
+.font-14{
+    font-size: 14px;
+}
+.font-12{
+    font-size: 12px;
+}
 .card1 {
     background-color: #B8D0FF;
     border-radius: 10px;
@@ -74,20 +84,18 @@ main {
 }
 .card1 .card-text {
     color: #183B56;
-    font-size: 14px;
 }
 .apply-btn {
     background-color: white;
-    font-size: 14px;
     text-align: center;
     width: 100%;
     border-radius: 8px;
+    color: #183B56;
 }
 .card2{
     border-radius: 10px;
 }
 .status{
-    font-size: 14px;
     border-radius: 3px;
     letter-spacing: 0.5px;
 }
@@ -95,11 +103,16 @@ main {
     background: #FFF6E7;
     color: #FFA300;
 }
-.upload-btn{
+.active{
+    background: rgba(46, 91, 255, 0.1);
+    color: #2E5BFF;
+}
+.primary-btn{
     background: #2E5BFF;
     border-radius: 6px;
-    font-size: 14px;
     color: #ffffff;
+    height: fit-content;
+    width: fit-content;
 }
 .card2 .card-subtitle{
     font-size: 15px;
@@ -110,7 +123,6 @@ main {
     margin-top: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 .stepper-item {
     position: relative;
@@ -125,13 +137,14 @@ main {
     opacity: 0.9;
     width: min-content;
     line-height: 17px;
+    margin-bottom: 6px;
 }
 .stepper-item::before {
     position: absolute;
     content: "";
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #EDEDED;
     width: 100%;
-    top: 39px;
+    top: 45px;
     left: -50%;
     z-index: 2;
 }
@@ -139,9 +152,9 @@ main {
 .stepper-item::after {
     position: absolute;
     content: "";
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #EDEDED;
     width: 100%;
-    top: 39px;
+    top: 45px;
     left: 50%;
     z-index: 2;
 }
@@ -155,20 +168,20 @@ main {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #ccc;
+    background: #EDEDED;
     margin-bottom: 6px;
 }
 
-.stepper-item.completed .step-counter {
-    background-color: #4bb543;
+.stepper-item.proces-completed .step-counter {
+    background-color: #00DF00;
 }
 
-.stepper-item.completed::after {
+.stepper-item.proces-completed::after {
     position: absolute;
     content: "";
-    border-bottom: 2px solid #4bb543;
+    border-bottom: 2px solid #00DF00;
     width: 100%;
-    top: 39px;
+    top: 45px;
     left: 50%;
     z-index: 3;
 }
@@ -179,14 +192,75 @@ main {
 .stepper-item:last-child::after {
     content: none;
 }
-
+.title{
+    opacity: 0.5;
+}
+.bottom-card{
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+}
+.bottom-card p{
+    color: #5A7184;
+}
+.side-card{
+    border-radius: 8px;
+}
+.side-card1{
+    background: #DFEEE0;
+}
+.side-card p{
+    opacity: 0.7;
+}
+.side-card2{
+    background-color: #EFDCC8;
+}
+.side-card h6{
+    color: #2E5BFF;
+}
+.side-card3{
+    background-color: #EAEFFF;
+}
+.progress{
+    height: 7px;
+    border-radius: 56px;
+    background-color: #cee0e3;
+}
+.progress-bar{
+    background-color: #2E5BFF;
+    border-radius: 56px;
+    width: 80%;
+}
 footer {
-    font-size: 16px;
+    margin-left: 220px;
+    font-size: 14px;
     color: #183B56;
+    opacity: 0.7;
+   
+}
+.footer-link{
+    text-decoration: none;
+    color: #183B56;
+    opacity: 0.7;
+    display: inline-block;
+}
+.social{
+    opacity: 1;
 }
 
+
 @media(max-width:1023px){
-    main{
+    main, footer{
         margin-left:0 ;
+    }
+}
+
+@media(max-width:575px){
+    .step-name{
+        font-size: 12px;
+    }
+    .primary-btn{
+        margin-top: 0.5rem;
     }
 }
